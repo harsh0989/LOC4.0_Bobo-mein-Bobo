@@ -6,8 +6,10 @@ import { Card, CardContent } from '@mui/material';
 import ReactPlayer from 'react-player';
 import { margin } from '@mui/system';
 
+
 const Videos = () => {
   const data = ['https://www.youtube.com/watch?v=aq3mnDRVIq0', 'https://www.youtube.com/watch?v=KVpxP3ZZtAc', 'https://www.youtube.com/watch?v=CH7DvnTNLuI', 'https://www.youtube.com/watch?v=ORAOkP1h3R0', 'https://www.youtube.com/watch?v=3iNpL_GmPh0', 'https://www.youtube.com/watch?v=Xg_l2oGNXm8', 'https://www.youtube.com/watch?v=iTrJVfvBAT0']
+
 
   return (
     <Swiper
@@ -34,3 +36,14 @@ style={{marginBottom:'4.5%'}}
 }
 
 export default Videos
+
+
+
+{/* <ReactPlayer url='https://www.youtube.com/watch?v=RpHCeooyqNo' controls="true" />
+        <Iframe url="http://streamlit.io"
+        width="450px"
+        height="450px"
+        id="myId"
+        className="myClassname"
+        display="initial"
+        position="relative"/> */}

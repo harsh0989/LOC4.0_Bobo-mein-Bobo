@@ -3,7 +3,7 @@ import './App.css';
 import React, { useState, useEffect } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-
+import Diet from './pages/Diet';
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Dashboard from "./pages/user/Dashboard";
@@ -64,11 +64,11 @@ function App() {
           <Route path="/forgotpassword" element={<ForgotPassword />} />
           <Route path="/dashboard" element={<Dashboard  setDay={setDay} />}/>
           <Route path="/otpverification" element={<OtpSignup />} />
-          <Route path="/myprofile" element={<MyProfile />} />
+          <Route path="/profile" element={<MyProfile />} />
           <Route path="/userdetails" element={<UserDetails />} />
           <Route path="/day" element={<Day/>} />
           <Route path="/videos" element={<Videos/>} />
-          
+          <Route path="/diet" element={<Diet/>} />
           
         </Routes>
         <Footer />
